@@ -1,1 +1,23 @@
 /* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+body {
+  background: rgb(249, 209, 90);
+  background: linear-gradient(
+    90deg,
+    rgba(249, 209, 90, 1) 56%,
+    rgba(253, 185, 111, 1) 100%
+  );
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0;
+  /* width: 90%; */
+  text-align: center;
+}
+
+.container__title {
+  color: white;
+  font-size: 35px;
+  margin-bottom: 0;
+}

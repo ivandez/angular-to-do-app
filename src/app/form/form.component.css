@@ -1,0 +1,56 @@
+.form {
+  min-height: 20vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form__input {
+  padding: 0.5rem;
+  font-size: 1.25rem;
+  border: none;
+  background: white;
+  height: 37px;
+}
+
+.form__button {
+  color: #ff6f47;
+  background: #f7fffe;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.form__select {
+  color: #ff6f47;
+  margin-top: 0;
+  font-size: 1.25rem;
+  cursor: pointer;
+  text-transform: capitalize;
+  height: 37px;
+  position: relative;
+  overflow: hidden;
+  width: 12rem;
+}
+
+/* .form__select::after {
+  content: "\25BC";
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  background: #ff6f47;
+  cursor: pointer;
+  pointer-events: none;
+} */
+
+.form__button {
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: none;
+  background: white;
+}
+
+.form__button:hover {
+  background: #ff6f47;
+  color: white;
+}
