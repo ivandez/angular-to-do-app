@@ -1,9 +1,13 @@
-<div class="task">
-  <input type="text" name="" id="" class="task__input" />
+<div class="task" *ngFor="let task of tasks">
+  <input type="text" value="{{ task.description }}" id="" class="task__input" />
   <button class="form__button" class="task__done-button">
     <fa-icon [icon]="faCheck"></fa-icon>
   </button>
-  <button class="form__button" class="task__delete-button">
+  <button
+    class="form__button"
+    class="task__delete-button"
+    value="{{ task.id }}"
+  >
     <fa-icon [icon]="faTrash"></fa-icon>
   </button>
 </div>
