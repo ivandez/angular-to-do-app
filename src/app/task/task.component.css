@@ -1,0 +1,32 @@
+.task {
+  flex-wrap: wrap;
+  margin: 2em;
+  display: flex;
+}
+
+.task__input {
+  padding: 0.5rem;
+  font-size: 1.25rem;
+  border: none;
+  background: white;
+  height: 37px;
+  width: 100%;
+}
+
+.task__done-button {
+  color: white;
+  width: 50%;
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: none;
+  background: #19c3a7;
+}
+
+.task__delete-button {
+  color: white;
+  width: 50%;
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: none;
+  background: #fd7538;
+}
