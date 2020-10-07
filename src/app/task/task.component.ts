@@ -40,11 +40,11 @@ export class TaskComponent implements OnInit {
         toggledTasks = this.taskService.getTask();
         break;
       case 'completadas':
-        toggledTasks = TASK.filter((task) => task.done == false);
+        toggledTasks = TASK.filter((task) => task.done == true);
 
         break;
       case 'incompletas':
-        toggledTasks = TASK.filter((task) => task.done == true);
+        toggledTasks = TASK.filter((task) => task.done == false);
 
         break;
     }
