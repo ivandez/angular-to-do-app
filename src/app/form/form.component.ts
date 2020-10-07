@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { faPlusSquare } from '@fortawesome/free-solid-svg-icons';
+import { TaskService } from '../task.service';
 
 @Component({
   selector: 'app-form',
@@ -8,11 +9,15 @@ import { faPlusSquare } from '@fortawesome/free-solid-svg-icons';
 })
 export class FormComponent implements OnInit {
   faPlusSquare = faPlusSquare;
-  select: string;
+  description: string;
 
-  constructor() {
-    this.select = 'todos';
-  }
+  constructor(private taskService: TaskService) {}
 
   ngOnInit(): void {}
+
+  createTask(description) {
+    this.taskService.createTask(description);
+
+    this.description = '';
+  }
 }

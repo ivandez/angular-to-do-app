@@ -6,9 +6,23 @@ import { Task } from './task';
   providedIn: 'root',
 })
 export class TaskService {
+  id: number = 0;
+
   constructor() {}
 
   getTask(): Task[] {
     return TASK;
+  }
+
+  createTask(description: string): void {
+    let newTask: Task = {
+      id: this.id,
+      description: description,
+      done: false,
+    };
+
+    TASK.push(newTask);
+
+    this.id++;
   }
 }

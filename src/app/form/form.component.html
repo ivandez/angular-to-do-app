@@ -6,8 +6,9 @@
       name=""
       id=""
       placeholder="Escribe el título aquí"
+      [(ngModel)]="description"
     />
-    <button class="form__button">
+    <button class="form__button" (click)="createTask(description)">
       <fa-icon [icon]="faPlusSquare"></fa-icon>
     </button>
   </div>
