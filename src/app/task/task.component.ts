@@ -57,7 +57,15 @@ export class TaskComponent implements OnInit {
   }
 
   completed(taskId: number): void {
-    if (TASK[taskId].done === false) TASK[taskId].done = true;
-    else TASK[taskId].done = false;
+    let task = TASK.find((TASK) => {
+      if (TASK.id === taskId) {
+        return TASK;
+      }
+    });
+
+    let taskIndex = TASK.indexOf(task);
+
+    if (TASK[taskIndex].done === false) TASK[taskIndex].done = true;
+    else TASK[taskIndex].done = false;
   }
 }
