@@ -8,8 +8,11 @@ import { faPlusSquare } from '@fortawesome/free-solid-svg-icons';
 })
 export class FormComponent implements OnInit {
   faPlusSquare = faPlusSquare;
+  select: string;
 
-  constructor() {}
+  constructor() {
+    this.select = 'todos';
+  }
 
   ngOnInit(): void {}
 }

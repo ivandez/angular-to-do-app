@@ -1,5 +1,12 @@
+<div>
+  <select class="select" (change)="onChange()" [(ngModel)]="selectValue">
+    <option>todos</option>
+    <option>completadas</option>
+    <option>incompletas</option>
+  </select>
+</div>
 <div class="task" *ngFor="let task of tasks">
-  <input type="text" value="{{ task.description }}" id="" class="task__input" />
+  <input type="text" value="{{ task.description }}" class="task__input" />
   <button class="form__button" class="task__done-button">
     <fa-icon [icon]="faCheck"></fa-icon>
   </button>

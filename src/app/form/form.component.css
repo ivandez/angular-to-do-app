@@ -20,18 +20,6 @@
   transition: all 0.3s ease;
 }
 
-.form__select {
-  color: #ff6f47;
-  margin-top: 0;
-  font-size: 1.25rem;
-  cursor: pointer;
-  text-transform: capitalize;
-  height: 37px;
-  position: relative;
-  overflow: hidden;
-  width: 12rem;
-}
-
 /* .form__select::after {
   content: "\25BC";
   position: absolute;
