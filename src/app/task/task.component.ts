@@ -15,6 +15,7 @@ export class TaskComponent implements OnInit {
   faCheck = faCheck;
   tasks: Task[];
   selectValue = 'todos';
+  buttonValue: number;
 
   constructor(private taskService: TaskService) {}
 
@@ -49,5 +50,9 @@ export class TaskComponent implements OnInit {
     }
 
     this.tasks = toggledTasks;
+  }
+
+  delete(taskId: number): void {
+    this.taskService.deleteTask(taskId);
   }
 }

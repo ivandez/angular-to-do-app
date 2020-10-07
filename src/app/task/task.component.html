@@ -14,6 +14,7 @@
     class="form__button"
     class="task__delete-button"
     value="{{ task.id }}"
+    (click)="delete(task.id)"
   >
     <fa-icon [icon]="faTrash"></fa-icon>
   </button>
