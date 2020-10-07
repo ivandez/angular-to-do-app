@@ -58,3 +58,25 @@
 .completed {
   text-decoration: line-through;
 }
+
+@media only screen and (min-width: 768px) {
+  .select {
+    margin-top: 1em;
+  }
+
+  .task {
+    justify-content: center;
+  }
+
+  .task__input {
+    width: 40%;
+  }
+
+  .task__done-button {
+    width: initial;
+  }
+
+  .task__delete-button {
+    width: initial;
+  }
+}
