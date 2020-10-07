@@ -5,9 +5,17 @@
     <option>incompletas</option>
   </select>
 </div>
-<div class="task" *ngFor="let task of tasks">
+<div
+  class="task"
+  *ngFor="let task of tasks"
+  [class.completed]="task.done === true"
+>
   <input type="text" value="{{ task.description }}" class="task__input" />
-  <button class="form__button" class="task__done-button">
+  <button
+    class="form__button"
+    class="task__done-button"
+    (click)="completed(task.id)"
+  >
     <fa-icon [icon]="faCheck"></fa-icon>
   </button>
   <button

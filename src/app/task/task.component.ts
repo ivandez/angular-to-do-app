@@ -55,4 +55,9 @@ export class TaskComponent implements OnInit {
   delete(taskId: number): void {
     this.taskService.deleteTask(taskId);
   }
+
+  completed(taskId: number): void {
+    if (TASK[taskId].done === false) TASK[taskId].done = true;
+    else TASK[taskId].done = false;
+  }
 }

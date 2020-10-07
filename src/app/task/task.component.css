@@ -54,3 +54,7 @@
   overflow: hidden;
   width: 12rem;
 }
+
+.completed {
+  text-decoration: line-through;
+}
