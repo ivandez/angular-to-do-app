@@ -1,5 +1,9 @@
 # TodoApp
 
+![todo](https://user-images.githubusercontent.com/38108288/95411998-f0821a00-08f5-11eb-9cbc-d358406a40b1.gif)
+
+Little angular to-do app for practice my knowledge.
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.3.
 
 ## Development server
